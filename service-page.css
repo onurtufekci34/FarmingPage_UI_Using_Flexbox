@@ -1,0 +1,101 @@
+/* BASIC STYLING */
+* {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 20px;
+}
+body {
+  background-color: gray;
+  color: black;
+  text-align: center;
+  line-height: 3;
+}
+
+/* BASIC STYLING OF ALL FLEX ITEMS IN FLEX CONTAINER */
+
+/* SERVICES UI STYLING */
+.services{
+  background: tomato;
+}
+
+/* UI DESIGN CSS STYLING */
+h1 {
+  font-size: medium;
+}
+.left-info {
+  background: yellow;
+}
+.left-info:hover {
+  background: white;
+}
+
+/* WEBSITE DEVELOPMENT UI CSS STYLING */
+.centre-info {
+  background:deepskyblue;
+}
+.centre-info:hover{
+  background: white;
+}
+
+/* QUALITY ASSURANCE UI STYLING */
+.right-info {
+  background:greenyellow;
+}
+.right-info:hover{
+  background: white;
+}
+
+/* CSS/FLEXBOX STYLING OF IMAGES */
+div>img {    
+  justify-content : center;
+  align-items : center;
+  width : 240px;
+  height : 240px ;
+  border : 4px solid dodgerblue;
+  border-radius : 50%;
+  margin-bottom : 5px;
+  padding : 20px;
+}
+
+/* MOBILE LAYOUT FLEXBOX PROPERTIES */
+@media all and (min-width: 600px) {
+  .flex-container {
+      display: flex;
+      flex-direction: column;
+  }
+}
+
+/* DESKTOP LAYOUT FLEXBOX PROPERTIES */
+@media all and (min-width: 770px) {
+  .flex-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;    
+  } 
+  .services {
+      width: 100%;
+  }
+  .left-info {
+      order: 1;
+      flex: 1;
+  }
+  .centre-info {
+      order: 2;
+      flex: 1;   
+  }
+  .right-info {   
+      order: 3;
+      flex: 1;
+  }
+}
+
+footer {
+  background-color: tomato;
+  
+}
+.tel {
+  font-size: 40px;
+  text-decoration: none;
+  color: black;
+  
+}
